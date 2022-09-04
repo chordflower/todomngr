@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Board",
+  "description": "This is a board",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id","name"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "minLength": 1,
+      "description": "The unique identifier of the board"
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the board",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of the board"
+    },
+    "creation_date": {
+      "type": "string",
+      "description": "The date this board was created",
+      "format": "date"
+    },
+    "colour": {
+      "type":"object",
+      "description": "The colour of the board",
+      "additionalProperties": false,
+      "required": ["red","green","blue","alpha"],
+      "properties": {
+        "red": {
+          "type":"integer",
+          "minimum": 0,
+          "maximum": 255,
+          "description": "The red component of the colour"
+        },
+        "green": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255,
+          "description": "The green component of the colour"
+        },
+        "blue": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255,
+          "description": "The blue component of the colour"
+        },
+        "alpha": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255,
+          "description": "The alpha component of the colour"
+        }
+      }
+    },
+    "start_date": {
+      "type": "string",
+      "description": "The date this milestone is supposed to start",
+      "format": "date"
+    },
+    "complete_date": {
+      "type": "string",
+      "description": "The date this milestone is supposed to finish",
+      "format": "date"
+    }
+  }
+}

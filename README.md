@@ -1,97 +1,28 @@
-# PKGMAN
+# TODOMAN
 
-This is a simple package manager for windows, using the user local home.
+This is a simple todo manager manager using the cli.
 
 
 ## Features
 
-- Support for remote repositories;
-- User based installs;
-- Made to be a companion for cmder;
-- Easy to use.
-
+- Able to track tasks using the cli;
+- Support for boards;
+- Support for agile based tasks;
+- Support for milestones;
+- Support for counting the track the time spent in each task.
 
 ## Installation
 
-Install pkgman with go get
+Install todoman with go get
 
 ```bash
-  go install -u github.com/chordflower/pkgman/cmd/pkgman
+  go install -u github.com/chordflower/todoman/cmd/todoman@latest
 ```
 
 ## Usage/Examples
 
-### Install a package
 
-```bash
-pkgman install pkgname
-```
 
-### List installed packages
-
-```bash
-pkgman List
-```
-
-### Search installed package by expression
-
-```bash
-pkgman search --local expression
-```
-
-### Search remote package by expression
-
-```bash
-pkgman search --remote expression
-```
-
-### Remove a package
-
-```bash
-pkgman remove pkgname
-```
-
-### Get information about a package
-
-```bash
-pkgman info pkgname
-```
-
-### Update the installed packages
-
-```bash
-pkgman update
-```
-
-### Update a specific package
-
-```bash
-pkgman update pkgname
-```
-
-### Add repository
-
-```bash
-pkgman repositories add --name="remote name" "remote_path"
-```
-
-### List repositories
-
-```bash
-pkgman repositories list
-```
-
-### Remove repository
-
-```bash
-pkgman repositories remove --name="remote name"
-```
-
-### Update repositories
-
-```bash
-pkgman repositories update
-```
 ## Authors
 
 - [@carddamom](https://www.github.com/carddamom)

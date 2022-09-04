@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Index",
+  "description": "This is an index",
+  "type":"object",
+  "required": ["index"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "index": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "title": "Item",
+        "type": "object",
+        "description": "An item of the index",
+        "required": [
+          "id",
+          "name"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "minLength": 1,
+            "description": "The unique identifier of the item"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the item",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        }
+      }
+    }
+  }
+}
