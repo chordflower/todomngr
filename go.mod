@@ -9,7 +9,7 @@ require (
 	github.com/ShiraazMoollatjie/goluhn v0.0.0-20211017190329-0d86158c056a
 	github.com/bykof/gostradamus v1.0.4
 	github.com/emirpasic/gods v1.18.1
-	github.com/gofrs/uuid v4.2.0+incompatible
+	github.com/gofrs/uuid v4.3.1+incompatible
 	github.com/jbenet/go-is-domain v1.0.5
 	github.com/logrusorgru/aurora/v3 v3.0.0
 )
